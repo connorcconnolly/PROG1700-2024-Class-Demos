@@ -1,0 +1,30 @@
+Midterm Topics
+BASICS
+-modulo operator
+-cmdlets. Get-ChildItem, Get-Help
+-$env variables
+-automatic variables
+[MATH]:: functions
+
+
+CONDITIONALS
+-if/elseif/else - quiz2 question 14, 
+-and/or
+-not
+
+LOOPS
+break, continue, and exit
+for, while, do while, do until
+
+ARRAYS
+-2d arrays - useful for storing coordinates. 
+demo a 2d array and how to use it by calculating area of a square with its vertices stored in a 2d array. 
+
+STRINGS
+string functions.
+converting strings to arrays and arrays to strings
+
+HASHTABLES
+
+Assignment 2 issues:
+magic number
