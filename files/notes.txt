@@ -1,0 +1,53 @@
+Okay! file I/O!
+
+Filesystem cmdlets:
+Get-Location            -get current directory (object)
+(Get-Location).path     -get current directory path as a string
+$PWD                    -working directory object
+
+-get an absolute filepath from a relative path:
+Resolve-Path filename.txt
+
+-get directory contents:
+Get-ChildItem
+ -Hidden                -get hidden folders and files.
+ -Directory             -Show only folders
+ -Files                 -Show only files
+ -Recurse               -Go inside folders.
+ -Get-ChildItem <directory path>
+ Using the Windows Registry:
+ -Get-ChildItem HKCU:\Software\Microsoft\Windows\CurrentVersion\     -shows some of your registry info
+ -gci env:
+ -gci Alias:
+ -gi Function:
+
+Test-Path filepath      -Returns boolean does file/directory exist
+Get-Item filepath       -gets info about file
+Get-ACL filepath        -gets ACL info about file
+
+Create a file:
+ New-Item -Path itemName.ext -ItemType File  -defaults as creating a file
+ New-Item itemName -ItemType Directory 
+ New-Item itemName.ext -Force       -Forces an overwrite of existing item of that name.
+
+Renaming Files and Directories:
+ Rename-Item -Path oldname.txt -NewName newname.txt
+
+Deleting Items
+ Remove-Item -Path
+
+Moving files
+ Move-Item filename newLocation
+
+Copy-item current target
+
+Invoke-Item -path           -invoking means open the file with its default program
+
+
+Next time: 
+Making a database using a CSV file.
+CSV: each field separated by commas, each record is on a separate line. 
+
+less commonly used:
+TSV - Tab separated values
+-same as a CSV but fields are separated by tabs instead of commas.
